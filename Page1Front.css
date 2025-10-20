@@ -21,8 +21,7 @@ a {
 }
 
 /* ========== HEADER / NAVBAR ========== */
-header,
-.navbar {
+header {
   background: rgba(255, 48, 8, 0.9);
   color: #fff;
   padding: 1rem 2rem;
@@ -37,39 +36,22 @@ header,
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header .logo,
-.navbar .logo {
+header .logo {
   font-weight: bold;
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-nav a,
-.nav-links li a {
+nav a {
   color: white;
   margin-left: 1.5rem;
   font-weight: 600;
   transition: color 0.3s;
 }
 
-nav a:hover,
-.nav-links li a:hover,
-.nav-links li a.active {
+nav a:hover {
   color: #ffd700;
-}
-
-/* Navbar Glass Effect */
-.navbar {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 15px 50px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
 }
 
 /* ========== FRONT SECTION ========== */
@@ -87,7 +69,7 @@ nav a:hover,
   color: #fff;
   text-align: center;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .front-section::before {
@@ -103,10 +85,9 @@ nav a:hover,
 
 .front-content {
   z-index: 1;
-  
-  max-width: 900px;
+  max-width: 1000px;
   background: rgba(0, 0, 0, 0.55);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(255, 48, 8, 0.3);
   animation: fadeInUp 1s ease-in-out;
@@ -121,22 +102,59 @@ nav a:hover,
   margin-bottom: 1rem;
 }
 
-.front-section img {
-  border-radius: 5%;
-  height: 30%;
-  width: 35%;
-
-}
-
-
-
 .front-content p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #f1f1f1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
+/* Food Gallery */
+.food-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.food-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.food-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 48, 8, 0.4);
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.food-text {
+  padding: 1rem;
+}
+
+.food-text h3 {
+  color: #ff3008;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.food-text p {
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* CTA Button */
 .cta-button {
   display: inline-block;
   background: #ff3008;
@@ -144,11 +162,12 @@ nav a:hover,
   font-weight: bold;
   padding: 0.8rem 1.8rem;
   border-radius: 50px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
   background: #e62807;
+  transform: scale(1.05);
 }
 
 /* Animation */
@@ -166,7 +185,8 @@ nav a:hover,
 /* ========== FOOTER ========== */
 footer {
   text-align: center;
-  background: rgba(255, 255, 255, 0.1); 
+  background: rgba(255, 255, 255, 0.1);
   font-size: 14px;
-  color: #000000;
+  color: #000;
+  padding: 1rem 0;
 }
