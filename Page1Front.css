@@ -157,7 +157,7 @@ nav a:hover {
 /* CTA Button */
 .cta-button {
   display: inline-block;
-  background: #ff3008;
+  background: #ff1e17;
   color: white;
   font-weight: bold;
   padding: 0.8rem 1.8rem;
@@ -166,7 +166,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  background: #e62807;
+  background: #3af918;
   transform: scale(1.05);
 }
 
