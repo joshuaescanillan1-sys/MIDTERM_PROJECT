@@ -1,0 +1,164 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== HEADER / NAVBAR ========== */
+header,
+.navbar {
+  background: rgba(255, 48, 8, 0.9);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo,
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a,
+.nav-links li a {
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffd700;
+}
+
+/* Navbar Glass Effect */
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+/* ========== FRONT SECTION ========== */
+.front-section {
+  min-height: 100vh;
+  background-image: url("Doordash front img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.front-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 61, 61, 0.35);
+  z-index: 0;
+}
+
+.front-content {
+  z-index: 1;
+  
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 48, 8, 0.3);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.front-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff3008;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.front-section img {
+  border-radius: 5%;
+  height: 30%;
+  width: 35%;
+
+}
+
+
+
+.front-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ff3008;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #e62807;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
