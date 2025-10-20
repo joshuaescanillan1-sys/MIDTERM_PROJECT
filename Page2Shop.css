@@ -1,3 +1,78 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== HEADER / NAVBAR ========== */
+header,
+.navbar {
+  background: rgba(255, 48, 8, 0.9);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo,
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a,
+.nav-links li a {
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffd700;
+}
+
+/* Navbar Glass Effect */
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+
 /* ========== SHOP SECTION ========== */
 /* SHOP SECTION */
 .shop-section {
