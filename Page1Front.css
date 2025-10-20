@@ -162,3 +162,11 @@ nav a:hover,
     transform: translateY(0);
   }
 }
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); 
+  font-size: 14px;
+  color: #000000;
+}
