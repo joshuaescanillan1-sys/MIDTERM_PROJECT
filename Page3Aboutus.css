@@ -6,7 +6,8 @@
   font-family: "Poppins", Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -57,7 +58,8 @@ nav a:hover {
   background: linear-gradient(to bottom right, #fff, #fce8e3);
   padding: 8rem 2rem 6rem;
   text-align: center;
-  flex: 1; /* Makes the section fill remaining space before footer */
+  flex: 1;
+  /* Makes the section fill remaining space before footer */
 }
 
 .about-section h2 {
@@ -109,6 +111,7 @@ footer {
   padding: 1.5rem 0;
   font-size: 0.9rem;
   color: #fff;
-  margin-top: auto; /* Pushes footer to the very bottom */
+  margin-top: auto;
+  /* Pushes footer to the very bottom */
   width: 100%;
 }
