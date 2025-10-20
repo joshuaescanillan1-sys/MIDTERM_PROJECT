@@ -1,0 +1,126 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== HEADER / NAVBAR ========== */
+header {
+  background: rgba(255, 48, 8, 0.9);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ========== TEAM SECTION ========== */
+.team-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ff6347, #ff4500);
+  color: #fff;
+}
+
+.team-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.team-section p {
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  background: #ff3008;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: auto; /* Pushes footer to the very bottom */
+  width: 100%;
+}
